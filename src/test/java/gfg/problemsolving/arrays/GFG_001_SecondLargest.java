@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class GFG_001_SecondLargest {
 
-    @Test(dataProvider = "arrayData")
+    @Test(dataProvider = "InputOutputData")
     public void getSecondLargest(int[] arr, int expectedOutput) {
         int max = Integer.MIN_VALUE, secondMax = Integer.MIN_VALUE;
         for (int num : arr) {
@@ -22,8 +22,8 @@ public class GFG_001_SecondLargest {
         Assert.assertEquals(secondMax, expectedOutput);
     }
 
-    @DataProvider(name = "arrayData")
-    public Object[][] arrayData() {
+    @DataProvider(name = "InputOutputData")
+    public Object[][] inputOutputData() {
         return new Object[][] {
                 { new int[] { 10, 10, 5 }, 5 },
                 { new int[] { 12, 35, 1, 10, 34, 1 }, 34 },
