@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class GFG_005_Next_Permutation {
+public class GFG_005_NextPermutation {
 
     void swap(int[] arr, int left, int right) {
         int temp = arr[left];
